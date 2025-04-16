@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date:16-04-2025
+## Register Number:212224040302
+## Name:S Sesha Raghavan
 ## Problem Title
 SIH 1653: Web based Selector-Applicant Simulation Software
 ## Problem Description
@@ -11,16 +11,61 @@ Background: Recruitment and Assessment Centre (RAC) under DRDO, Ministry of Defe
 Ministry of Defence
 
 ## Idea
+Build an AI-powered virtual interview board room simulator that:
+
+Conducts domain-specific interviews (technical & managerial)
+
+Dynamically generates relevant questions based on the candidate’s profile
+
+Scores both interview questions (for relevance to the domain) and answers (for quality and correctness)
+
+Provides a final evaluative score to assist selection/promotion decisions
+
 
 
 ## Proposed Solution / Architecture Diagram
+![ChatGPT Image Apr 16, 2025, 03_16_02 PM](https://github.com/user-attachments/assets/eef7b916-fb3b-4504-8244-7c85aebf2997)
 
 
 ## Use Cases
+Candidate Interview Simulation
+Candidates undergo a virtual interview with AI-generated and expert-curated questions.
+
+👩‍🏫 Expert Evaluation
+Experts ask questions and receive feedback on relevance to candidate’s domain.
+
+🧠 NLP-Based Answer Evaluation
+AI evaluates the candidate’s answers for correctness, depth, and coherence.
+
+📊 Score & Suitability Report
+The system compiles overall scores for easy decision-making.
+
+📈 Post-interview Analytics
+Insights on candidate performance and expert engagement trends.
 
 
 ## Technology Stack
-
+Layer | Technology
+Frontend | React.js, Tailwind CSS
+Backend | Python (FastAPI) / Node.js
+NLP & AI | OpenAI GPT-4 / HuggingFace Transformers / spaCy
+Voice Processing | OpenAI Whisper / Google Speech-to-Text
+Database | PostgreSQL (structured), MongoDB (unstructured)
+Authentication | OAuth2 / JWT
+Cloud | AWS EC2, Lambda, S3 OR Azure Blob, Azure Functions
+Analytics & Dashboard | Plotly, PowerBI (optional integration)
+CI/CD | GitHub Actions / Jenkins
+Containerization | Docker, Kubernetes
 
 ## Dependencies
+OpenAI API / HuggingFace Transformers – for question generation and response evaluation
 
+Google Cloud Speech-to-Text / Whisper – for audio input transcription
+
+Secure Cloud Storage – for storing interview transcripts
+
+DRDO-specific Domain Ontologies – to tailor the question generation
+
+Govt Cybersecurity Compliance Tools – to meet security & privacy regulations
+
+Postgres/MongoDB Drivers – for database management
